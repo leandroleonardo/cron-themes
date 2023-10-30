@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="MOBILE" bpmnAble="false" formTarget="" functionCategory="" library="false" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="Modal" ruleName="Modal" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="332.9" scrolly="-96.39999999999999" target="XYu6TPpBp-nXx=3}m^St"/>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="#}XQq,ah9npyamJ152sq" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-352" y="23">
+    <field customattributes="" name="NAME">openSucessModal</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="*{4yLZb91;ioNn[u2M|S" multilayer="false" namespace="cronapi.notification.confirmDialogAlert" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EModal%20de%20confirma%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20modal%20de%20confirma%C3%A7%C3%A3o,%20permitindo%20a%20personaliza%C3%A7%C3%A3o%20do%20%C3%ADcone,%20t%C3%ADtulo,%20subt%C3%ADtulo%20e%20bot%C3%B5es%20de%20a%C3%A7%C3%A3o.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%C3%8Dcone%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Subt%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Lista%20de%20bot%C3%B5es%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.confirmDialogAlert','cronapi.notification.confirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.notification.confirmDialogAlert}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Ícone"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Subtítulo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Lista de botões"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="1JwM^tj4?kCe$)Sow3=K" origintype="util_dropdown" output="true" type="util_dropdown">
+            <mutation>
+              <arg name="error" value="Erro"/>
+              <arg name="success" value="Sucesso"/>
+              <arg name="warning" value="Aviso"/>
+              <arg name="info" value="Informação"/>
+            </mutation>
+            <field customattributes="" name="SELECT">success</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="Zi-RX/UO3S_RDdt%]RN/" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Título</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="{oZ(Hxh5K#falF?cQ6Al" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Subtítulo</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <block asynccall="false" colour="#745ba5" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="C:d4.NO{TnNriaLy*=ny" origintype="lists_create_with" output="true" tooltip="Cria uma lista com a quantidade de itens informada." type="lists_create_with">
+            <mutation items="2"/>
+            <value name="ADD0">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="OF+8diAMc3T$YD;:2g|y" multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="E=*@4;IIx~r+k-i4KI$h" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">true</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="t1YG@]SB|j8wqxU:(sEN" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Sim</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="dypC-VVi9gCkK~]/TJiJ" multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="%MP=c9}C:op+FfI(+CZG" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">false</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="#}XQq,ah9npyamJ152sq" id="|naHK,X#K|_0vW!RF#HX" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Não</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <field customattributes="" name="NAME">openErrorModal</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="6^Yb5p*0]uL%tb+Ibdd#" multilayer="false" namespace="cronapi.notification.confirmDialogAlert" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EModal%20de%20confirma%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20modal%20de%20confirma%C3%A7%C3%A3o,%20permitindo%20a%20personaliza%C3%A7%C3%A3o%20do%20%C3%ADcone,%20t%C3%ADtulo,%20subt%C3%ADtulo%20e%20bot%C3%B5es%20de%20a%C3%A7%C3%A3o.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%C3%8Dcone%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Subt%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Lista%20de%20bot%C3%B5es%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.confirmDialogAlert','cronapi.notification.confirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.notification.confirmDialogAlert}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Ícone"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Subtítulo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Lista de botões"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="p1b$MK%bd7x$By)1umr0" origintype="util_dropdown" output="true" type="util_dropdown">
+            <mutation>
+              <arg name="error" value="Erro"/>
+              <arg name="success" value="Sucesso"/>
+              <arg name="warning" value="Aviso"/>
+              <arg name="info" value="Informação"/>
+            </mutation>
+            <field customattributes="" name="SELECT">error</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=ns):W{f!{Jg07J|p/dy" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Título</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="jyvu3Yg`]y@3@P0_FAmL" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Subtítulo</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <block asynccall="false" colour="#745ba5" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="},GZ$3L{wr~50L{Tfj?6" origintype="lists_create_with" output="true" tooltip="Cria uma lista com a quantidade de itens informada." type="lists_create_with">
+            <mutation items="2"/>
+            <value name="ADD0">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="JtM%l8,0N[!y`+Nw~FTm" multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="GMdBuMgg6?4J]wuwL+VX" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">true</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="q~szsN]v/hPmf|k8}m;a" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Sim</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="[Isc=dO;E$Z^.dm1Q.cv" multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="DKd:3ry^3^zlnowERX0S" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">false</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="mU,j{l;n{vlxH+-aS~H*" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Não</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="XYu6TPpBp-nXx=3}m^St" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-202" y="173">
+    <field customattributes="" name="NAME">openInfoModal</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="GAjeMH_M72,^CIRG*aE@" multilayer="false" namespace="cronapi.notification.confirmDialogAlert" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EModal%20de%20confirma%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20modal%20de%20confirma%C3%A7%C3%A3o,%20permitindo%20a%20personaliza%C3%A7%C3%A3o%20do%20%C3%ADcone,%20t%C3%ADtulo,%20subt%C3%ADtulo%20e%20bot%C3%B5es%20de%20a%C3%A7%C3%A3o.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%C3%8Dcone%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Subt%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Lista%20de%20bot%C3%B5es%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.confirmDialogAlert','cronapi.notification.confirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.notification.confirmDialogAlert}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Ícone"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Subtítulo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Lista de botões"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="kJ4=5mwfA58HDLZ`i!ED" origintype="util_dropdown" output="true" type="util_dropdown">
+            <mutation>
+              <arg name="error" value="Erro"/>
+              <arg name="success" value="Sucesso"/>
+              <arg name="warning" value="Aviso"/>
+              <arg name="info" value="Informação"/>
+            </mutation>
+            <field customattributes="" name="SELECT">info</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="{$!7CH}g1=?L,l9l%F/@" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Título</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="b*MhZYdB9n@LQ$9*@RTc" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Subtítulo</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <block asynccall="false" colour="#745ba5" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id=".6TzA):{RuVr;CM%e?W[" origintype="lists_create_with" output="true" tooltip="Cria uma lista com a quantidade de itens informada." type="lists_create_with">
+            <mutation items="2"/>
+            <value name="ADD0">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="SvynhTUkVyf1Sl*bou}u" multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="pdZiz8m~T|,d^6]a`%Z]" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">true</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="P._Hy8d*QuxnY#t7POiW" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Sim</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="i*xhJ?eY`fk3AKeYyM}." multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="9d~bPLcL*,jWoD)!gR(}" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">false</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="XYu6TPpBp-nXx=3}m^St" id="JsI;NaxVN7,vYC*qkO]V" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Não</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="BW(NC93Y,ikSg1@TEYC)" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-127" y="173">
+    <field customattributes="" name="NAME">openWarningModal</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="I-$^}IttP5V[#}suxh]n" multilayer="false" namespace="cronapi.notification.confirmDialogAlert" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EModal%20de%20confirma%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20modal%20de%20confirma%C3%A7%C3%A3o,%20permitindo%20a%20personaliza%C3%A7%C3%A3o%20do%20%C3%ADcone,%20t%C3%ADtulo,%20subt%C3%ADtulo%20e%20bot%C3%B5es%20de%20a%C3%A7%C3%A3o.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%C3%8Dcone%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Subt%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Lista%20de%20bot%C3%B5es%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.confirmDialogAlert','cronapi.notification.confirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.notification.confirmDialogAlert}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Ícone"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Subtítulo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Lista de botões"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="D51gU:uE7];9=WG?*;!i" origintype="util_dropdown" output="true" type="util_dropdown">
+            <mutation>
+              <arg name="error" value="Erro"/>
+              <arg name="success" value="Sucesso"/>
+              <arg name="warning" value="Aviso"/>
+              <arg name="info" value="Informação"/>
+            </mutation>
+            <field customattributes="" name="SELECT">warning</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="i{0*53ORnT)VLFxK2$$!" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Título</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="wlPtcHigG86HAV6P?/~{" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Subtítulo</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <block asynccall="false" colour="#745ba5" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="WbvsfLcCIsZwbJtyAzzO" origintype="lists_create_with" output="true" tooltip="Cria uma lista com a quantidade de itens informada." type="lists_create_with">
+            <mutation items="2"/>
+            <value name="ADD0">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="_M/dDWm:,hJ012eA~u3." multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="-+C6el,F:(I-sdWh$D0g" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">true</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="LFWBI=z%Wfd-#EXw{{V5" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Sim</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block asynccall="false" collapsed="true" colour="#355b25" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="Iw8Oi?~(!t+KnvsiDBx=" multilayer="false" namespace="cronapi.notification.buttonConfirmDialogAlert" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EBot%C3%A3o%20do%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20define%20as%20caracteristicas%20do(s)%20bot%C3%A3o(%C3%B5es).%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bot%C3%A3o%20de%20destaque%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20A%C3%A7%C3%A3o%20do%20bot%C3%A3o%20:%20Comandos%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide-s.cronapp.io/help?type=blockly&amp;amp;id=cronapi.notification.buttonConfirmDialogAlert','cronapi.notification.buttonConfirmDialogAlert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.notification.buttonConfirmDialogAlert}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Botão de destaque"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ação do botão"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#355b25" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="POrIux:s):Aiog)1F)?^" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="true" value="Sim"/>
+                      <arg name="false" value="Não"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">false</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="BW(NC93Y,ikSg1@TEYC)" id="o6%M+UZ[-pa}Cw.twM4," origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">Não</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>
