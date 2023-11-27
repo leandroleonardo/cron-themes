@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="" functionCategory="" library="false" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="Modal" ruleName="Modal" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="448.70000000000005" scrolly="-77.19999999999996" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-352" y="173">
+    <field customattributes="" name="NAME">Executar</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ZqFZ2*QHW-]o8K:p@#*W" multilayer="false" namespace="cronapi.screen.createDefaultModal" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECria%20Modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20T%C3%ADtulo%20:%20Texto%3C/span%3E%3Cdiv%3E%20T%C3%ADtulo%20do%20modal%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20exibida%20no%20modal%3C/div%3E%3Cspan%3E%20-%20Nome%20do%20bot%C3%A3o%20cancelar%20:%20Texto%3C/span%3E%3Cdiv%3E%20Nome%20atribu%C3%ADdo%20ao%20bot%C3%A3o%20cancelar%20do%20modal%3C/div%3E%3Cspan%3E%20-%20Nome%20do%20bot%C3%A3o%20confirmar%20:%20Texto%3C/span%3E%3Cdiv%3E%20Nome%20atribu%C3%ADdo%20ao%20bot%C3%A3o%20confirmar%20do%20modal%3C/div%3E%3Cspan%3E%20-%20Ao%20confirmar%20:%20Comandos%3C/span%3E%3Cdiv%3E%20comandos%20executados%20ao%20clicar%20no%20bot%C3%A3o%20atribu%C3%ADdo%20ao%20confirmar%20do%20modal%3C/div%3E%3Cspan%3E%20-%20Ao%20cancelar%20:%20Comandos%3C/span%3E%3Cdiv%3E%20comandos%20executados%20ao%20clicar%20no%20bot%C3%A3o%20atribu%C3%ADdo%20ao%20cancelar%20do%20modal%3C/div%3E%3Cspan%3E%20-%20Ao%20fechar%20:%20Comandos%3C/span%3E%3Cdiv%3E%20Comandos%20executados%20ao%20clicar%20no%20bot%C3%A3o%20de%20fechar%20modal.%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.createDefaultModal','cronapi.screen.createDefaultModal')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.createDefaultModal}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Título"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Mensagem"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Nome do botão cancelar"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Nome do botão confirmar"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ao confirmar"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ao cancelar"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STATEMENT" name="Ao fechar"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="fZ[}Exlh[~p6$6QpFb=O" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Título</field>
+          </shadow>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="tn+%R{V8I1s+}1q,/:iB" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Modal para testes</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a;3;7Ae|xo(3=q!Y8a~s" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Fechar</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=":Eo1JF*V^nZ:!~Z?c-NV" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Salvar</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>
